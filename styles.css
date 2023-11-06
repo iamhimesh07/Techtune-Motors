@@ -281,6 +281,58 @@ h3 {
     background-color: #005b8f;
 }
 
+/* testimonials */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 20px; */
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 1rem;
+}
+
+.testimonial-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    /* background-color: #000; */
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 10px;
+}
+
+.author {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005b8f;
+}
+
 /* Footer */
 footer {
     background-color: rgba(30, 30, 30, 1);

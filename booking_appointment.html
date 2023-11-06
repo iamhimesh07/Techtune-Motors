@@ -44,9 +44,9 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav text-uppercase">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
             <a class="nav-link" href="services.html">Service</a>
-            <a class="nav-link" href="booking_appointment.html"
+            <a class="nav-link active" href="booking_appointment.html"
               >Book An Appointment</a
             >
             <a class="nav-link" href="contact_us.html">Contact Us</a>
@@ -56,115 +56,77 @@
       </div>
     </nav>
 
-    <h1>Book An Appointment</h1>
-    <form action="submit_service_request.php" method="post">
-      <fieldset>
-        <legend>Vehicle Information</legend>
-        <label for="make_model">Make & Model:</label>
-        <input type="text" id="make_model" name="make_model" required /><br />
+    <div class="container-fluid bg-color">
+      <div class="row">
+        <h1 class="mt-5 mb-5">Book An Appointment</h1>
 
-        <label for="year">Year:</label>
-        <input type="text" id="year" name="year" required /><br />
+    <form action="submit_service_request.php" method="post" netlify>
+        <fieldset>
+            <legend>Vehicle Information</legend>
+            <label for="make_model">Make & Model:</label>
+            <input type="text" id="make_model" name="make_model" required><br>
 
-        <label for="vin">VIN:</label>
-        <input type="text" id="vin" name="vin" required /><br />
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year" required><br>
 
-        <label for="license_plate">License Plate:</label>
-        <input
-          type="text"
-          id="license_plate"
-          name="license_plate"
-          required
-        /><br />
+            <label for="vin">VIN:</label>
+            <input type="text" id="vin" name="vin" required><br>
 
-        <label for="mileage">Mileage:</label>
-        <input type="text" id="mileage" name="mileage" required /><br />
-      </fieldset>
+            <label for="license_plate">License Plate:</label>
+            <input type="text" id="license_plate" name="license_plate" required><br>
 
-      <fieldset>
-        <legend>Customer Information</legend>
-        <label for="customer_name">Customer Name:</label>
-        <input
-          type="text"
-          id="customer_name"
-          name="customer_name"
-          required
-        /><br />
+            <label for="mileage">Mileage:</label>
+            <input type="text" id="mileage" name="mileage" required><br>
+        </fieldset>
 
-        <label for="contact_info">Contact Information:</label>
-        <input
-          type="text"
-          id="contact_info"
-          name="contact_info"
-          required
-        /><br />
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="customer_name">Customer Name:</label>
+            <input type="text" id="customer_name" name="customer_name" required><br>
 
-        <label for="customer_address">Customer Address:</label>
-        <input
-          type="text"
-          id="customer_address"
-          name="customer_address"
-          required
-        /><br />
-      </fieldset>
+            <label for="contact_info">Contact Information:</label>
+            <input type="text" id="contact_info" name="contact_info" required><br>
 
-      <fieldset>
-        <legend>Service Request Details</legend>
-        <label for="service_request">Service Request:</label>
-        <textarea
-          id="service_request"
-          name="service_request"
-          rows="4"
-          required
-        ></textarea
-        ><br />
+            <label for="customer_address">Customer Address:</label>
+            <input type="text" id="customer_address" name="customer_address" required><br>
+        </fieldset>
 
-        <label for="service_history">Service History:</label>
-        <textarea
-          id="service_history"
-          name="service_history"
-          rows="4"
-        ></textarea
-        ><br />
+        <fieldset>
+            <legend>Service Request Details</legend>
+            <label for="service_request">Service Request:</label>
+            <textarea id="service_request" name="service_request" rows="4" required></textarea><br>
 
-        <label for="authorization">Authorization:</label>
-        <textarea
-          id="authorization"
-          name="authorization"
-          rows="4"
-          required
-        ></textarea
-        ><br />
-      </fieldset>
+            <label for="service_history">Service History:</label>
+            <textarea id="service_history" name="service_history" rows="4"></textarea><br>
 
-      <fieldset>
-        <legend>Payment and Completion</legend>
-        <label for="estimated_cost">Estimated Cost:</label>
-        <input
-          type="text"
-          id="estimated_cost"
-          name="estimated_cost"
-          required
-        /><br />
+            <label for="authorization">Authorization:</label>
+            <textarea id="authorization" name="authorization" rows="4" required></textarea><br>
+        </fieldset>
 
-        <label for="completion_date">Expected Completion Date & Time:</label>
-        <input
-          type="datetime-local"
-          id="completion_date"
-          name="completion_date"
-          required
-        /><br />
+        <fieldset>
+            <legend>Payment and Completion</legend>
+            <label for="estimated_cost">Estimated Cost:</label>
+            <input type="text" id="estimated_cost" name="estimated_cost" required><br>
 
-        <label for="payment_options">Payment Options:</label>
-        <select id="payment_options" name="payment_options" required>
-          <option value="credit_card">Credit Card</option>
-          <option value="cash">Cash</option>
-          <option value="check">Check</option>
-          <option value="other">Other</option>
-        </select>
-      </fieldset>
+            <label for="completion_date">Expected Completion Date & Time:</label>
+            <input type="datetime-local" id="completion_date" name="completion_date" required><br>
 
-      <button type="submit">Submit Request</button>
+            <label for="payment_options">Payment Options:</label>
+            <select id="payment_options" name="payment_options" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="cash">Cash</option>
+                <option value="check">Cheque</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Submit Request</button>
     </form>
+</body>
+</html>
+
+
+      </div>
+    </div>
   </body>
 </html>

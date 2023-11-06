@@ -244,24 +244,27 @@ a {
 /* Style for the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     margin: 0;
     padding: 0;
 }
 
 /* Style for the form container */
+.bg-color {
+    background-color: #000;
+}
+
 form {
-    max-width: 600px;
+    max-width: 600px !important;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for headings */
 h1 {
     text-align: center;
-    color: #333;
+    color: rgb(253, 253, 253);
 }
 
 /* Style for fieldsets */
@@ -274,8 +277,9 @@ fieldset {
 
 legend {
     font-weight: bold;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 5px 10px;
+    color: rgb(255, 255, 255);
 }
 
 /* Style for labels */
@@ -283,11 +287,14 @@ label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    color: rgb(255, 255, 255);
 }
 
 /* Style for text inputs and textareas */
 input[type="text"],
-textarea {
+input[type="datetime-local"],
+textarea,
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -295,10 +302,16 @@ textarea {
     border-radius: 5px;
 }
 
-/* Style for the submit button */
+select {
+    width: 100%;
+    padding: 10px;
+}
+
+
 button[type="submit"] {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(255, 248, 80, 1);
+    color: #000;
+    font-weight: bold;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

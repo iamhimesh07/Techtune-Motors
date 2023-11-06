@@ -321,3 +321,65 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #555;
 }
+
+
+/* Contact us page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    /* background-color: #f9f9f9; */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form h2 {
+    color: #ffffff;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button[type="submit"] {
+    background-color: rgba(255, 248, 80, 1);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Google Maps Styles */
+.google-map {
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

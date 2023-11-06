@@ -1,31 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-</head>
-<body>
-    <form method="POST" netlify>
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Your Role: <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-      
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/font/flaticon.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/images/logo.png"
+            alt="Bootstrap"
+            width="30"
+            height="24"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav text-uppercase">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="services.html">Service</a>
+            <a class="nav-link" href="booking_appointment.html"
+              >Book An Appointment</a
+            >
+            <a class="nav-link active" href="contact_us.html">Contact Us</a>
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="header abtus_bg_image">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <p>This is about us page</p>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container-fluid bg-color">
+        <div class="row">
+          <div class="container">
+            <div class="column">
+              <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="submit_contact_form.php" method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required /><br />
+
+                  <label for="email">Email:</label>
+                  <input type="text" id="email" name="email" required /><br />
+
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                  ></textarea
+                  ><br />
+
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+            <div class="column">
+              <h2 class="text-white mb-4">View Location on Map</h2>
+
+              <div class="google-map">
+                <!-- Google Maps iframe embed code goes here -->
+                <!-- <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.786819226107!2dYOUR_LONGITUDE!3dYOUR_LATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xYOUR_MARKER_LONGITUDE!2sYOUR_MARKER_LATITUDE!5e0!3m2!1sen!2sus!4vYOUR_MAP_API_KEY"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe> -->
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.875870345786!2d77.51360237479298!3d12.91569871610201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f6b65f63b5b%3A0x20c589588c5a815a!2sTechTune%20Motors%20Multi%20Brand%20Car!5e0!3m2!1sen!2sin!4v1699270740750!5m2!1sen!2sin"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h2>Techtune Motors</h2>
+          <p>Ride & Repair on the Go</p>
+        </div>
+
+        <div class="footer-column">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h2>Address</h2>
+          <p>RR Nagar, Bengaluru</p>
+        </div>
+
+        <div class="footer-column">
+          <h2>Social Media</h2>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

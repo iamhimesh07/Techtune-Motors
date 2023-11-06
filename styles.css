@@ -1,4 +1,15 @@
 /* styles */
+/* styles.css */
+
+/* Setting custom cursor globally on webpage with image */
+/* body {
+    cursor: url('assets/images/Car.png') 7 7, auto;
+} */
+
+/* On hover, change the cursor to a different car icon */
+/* a:hover {
+    cursor: url('assets/images/Wheel.png') 5 5, auto;
+} */
 
 
 /* Utility Classes */
@@ -154,17 +165,63 @@ h3 {
     flex-grow: 3;
 }
 
-.rcf_headline {
-    color: white;
+.request-call-back {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    /* border: 5px dotted #ddd; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 248, 80, 1);
+    color: #000;
+    width: 40%;
 }
 
+.request-call-back h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
+.request-call-back form {
+    margin-top: 20px;
+}
 
-.request_callback_form {
-    width: 50%;
-    /* height: 0px; */
-    background-color: rgba(255, 248, 80, 1);
-    padding: 1.5rem;
+.request-call-back .form-group {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.request-call-back label {
+    display: block;
+    font-weight: bold;
+    color: #000;
+}
+
+.request-call-back input[type="text"],
+.request-call-back  input[type="tel"],
+.request-call-back textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.request-call-back textarea {
+    height: 120px;
+}
+
+.request-call-back button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.request-call-back  button:hover {
+    background-color: #005b8f;
 }
 
 /* Footer */
@@ -241,6 +298,101 @@ a {
     background-size: cover;
 }
 
+/* styles.css */
+
+#about {
+    padding: 4rem;
+    color: white;
+}
+
+.a-subhealine {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: rgba(255, 248, 80, 1);
+    color: #000;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+#about p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+#about h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    background-color: rgba(255, 248, 80, 1);
+    color: #000;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.team-member {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #0077b6;
+    box-shadow: 0 0 10px rgba(0, 119, 182, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member h4 {
+    margin: 10px 0;
+}
+
+.team-member p {
+    color: #666;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 119, 182, 0.8);
+}
+
+ul {
+    text-align: left;
+    list-style-type: disc;
+}
+
+.contact-button, .quote-button, .appointment-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover, .quote-button:hover, .appointment-button:hover {
+    background-color: #005b8f;
+}
+
+.contact-button {
+    background-color: #ff6b6b;
+}
+
+.quote-button {
+    background-color: #55a630;
+}
+
+.appointment-button {
+    background-color: #ffbb31;
+}
+
+
+
+/* other */
 /* Style for the body */
 body {
     font-family: Arial, sans-serif;
@@ -254,7 +406,7 @@ body {
     background-color: #000;
 }
 
-form {
+.b-form {
     max-width: 600px !important;
     margin: 0 auto;
     padding: 20px;
@@ -308,8 +460,8 @@ select {
 }
 
 
-button[type="submit"] {
-    background-color: rgba(255, 248, 80, 1);
+.b-button button[type="submit"] {
+    background-color: rgb(254, 254, 254);
     color: #000;
     font-weight: bold;
     padding: 10px 20px;
@@ -318,7 +470,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.b-button button[type="submit"]:hover {
     background-color: #555;
 }
 
@@ -419,6 +571,16 @@ button[type="submit"]:hover {
 .service i {
     font-size: 30px;
     color: #0077b6;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.s-headline {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
 }
 
 .service h3 {

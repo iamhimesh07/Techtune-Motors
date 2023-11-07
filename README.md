@@ -49,3 +49,4 @@ This is assignment Project which is made by **HCA** Team member(refer below for 
 ## Footnote :
 ---
 * special thanks to `W3Schools, MDN, PHP Docs, Stackoverflow` and `google.` and also teachers.
+* Special mention to **TakeitEasyEngineers Team** which is responsible for this internship.

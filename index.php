@@ -46,10 +46,6 @@
     <div class="row">
       <div class="col-md-10 offset-md-1 col-sm-12 offset-sm-0 overflow-hidden text-center content">
         <h1 class="main-hero-headline">"PRECISION, PERFORMANCE, PROMECH"</h1>
-        <!-- <button type="button" class="btn btn-primary btn-lg rounded-pill">
-            <a href="booking_appointment.html"></a>
-            
-          </button> -->
         <a class="btn btn-primary primary-button" href="booking_appointment.html" role="button">Book Your Appointment</a>
       </div>
     </div>
@@ -240,6 +236,7 @@
       <div class="footer-column">
         <h2>Techtune Motors</h2>
         <p>Ride & Repair on the Go</p>
+        <p>&copy; <?php echo date("Y"); ?>, Techtune Motors</p>
       </div>
 
       <div class="footer-column">

@@ -1,0 +1,1 @@
+<!-- make a footer page in php and include it on all web pages, where it required. -->

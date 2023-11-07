@@ -801,3 +801,50 @@ select {
 .not-find-page .back-link:hover {
     background-color: #005b8f;
 }
+
+
+/* Media query for tablets (portrait) */
+@media screen and (max-width: 768px) {
+    /* Update font sizes, margins, and paddings for smaller screens */
+    .main-hero-headline {
+      font-size: 4rem;
+    }
+    .wwd-bg-image,
+    .wcu-bg-image {
+      height: 70vh;
+    }
+    .box {
+      width: calc(50% - 10px);
+      margin: 1rem 0.5rem;
+    }
+    .testimonial-title {
+      font-size: 1.5rem;
+    }
+    .testimonial {
+      padding: 5px;
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 480px) {
+    /* Update font sizes, margins, and paddings for smaller screens */
+    .main-hero-headline {
+      font-size: 3rem;
+    }
+    .wwd-bg-image,
+    .wcu-bg-image {
+      height: 50vh;
+    }
+    .box {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    .testimonial-title {
+      font-size: 1.2rem;
+    }
+    .testimonial {
+      padding: 2px;
+    }
+    /* Adjust other styles as needed */
+  }
+  

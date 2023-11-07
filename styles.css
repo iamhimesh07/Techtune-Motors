@@ -19,7 +19,9 @@
   }
 
   body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Arial, sans-seri, Times, serif;
+    margin: 0;
+    padding: 0;
   }
 
 /* Custom Cursor */
@@ -59,15 +61,6 @@
     border-radius: 10px;
 
 }
-
-/* .btn {
-    background-color: var(--primary-btn-bg-color) !important;
-    color: var(--primary-btn-text-color) !important;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-} */
 
 button.s-btn {
     background-color: var(--secondary-btn-bg-color);
@@ -182,7 +175,6 @@ button.s-btn {
 
 .box {
     width: calc(33.33% - 10px);
-    /* Adjust width as needed (33.33% with some spacing) */
     margin: 1rem 1.2rem;
     background-color: rgba(255, 248, 80, 0.5);
     border: 1px solid #ccc;
@@ -248,9 +240,7 @@ h3 {
 
 .icon .left_side img {
     width: 50px;
-    /* Set the icon width as needed */
     height: 50px;
-    /* Set the icon height as needed */
     margin-right: 10px;
 }
 
@@ -262,7 +252,6 @@ h3 {
     text-align: center;
     margin: 20px;
     padding: 20px;
-    /* border: 5px dotted #ddd; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 248, 80, 1);
@@ -322,7 +311,6 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 20px; */
     background-color: #000;
     color: #fff;
     padding: 1.5rem 1rem;
@@ -334,8 +322,6 @@ h3 {
     align-items: center;
     width: 300px;
     height: 150px;
-    /* background-color: #000; */
-    /* border: 1px solid #ddd; */
     border-radius: 5px;
     overflow: hidden;
     position: relative;
@@ -455,13 +441,10 @@ a {
 .abtus_bg_image {
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.35)), url("assets/images/hero_image.jpg");
     background-color: #cccccc;
-    /* height: 95vh; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* styles.css */
 
 #about {
     padding: 4rem;
@@ -560,14 +543,6 @@ ul {
 
 
 /* other */
-/* Style for the body */
-body {
-    font-family: Arial, sans-serif;
-    /* background-color: #f2f2f2; */
-    margin: 0;
-    padding: 0;
-}
-
 /* Style for the form container */
 .bg-color {
     background-color: #000;
@@ -647,7 +622,6 @@ select {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    /* background-color: #fff; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
 }
@@ -659,7 +633,6 @@ select {
 
 /* Contact Form Styles */
 .contact-form {
-    /* background-color: #f9f9f9; */
     padding: 20px;
     border-radius: 5px;
 }
@@ -716,8 +689,6 @@ select {
 
 
 /* services */
-
-
 #services {
     text-align: center;
 }
@@ -785,7 +756,6 @@ select {
 }
 
 /* 404 - not found page */
-
 .not-find-page {
     background-color: #f5f5f5;
     font-family: Arial, sans-serif;
@@ -798,7 +768,6 @@ select {
 
 .not-find-page .fourzerofour{
     text-align: center;
-    /* background-color: #000; */
     padding: 20px;
     border-radius: 5px;
 }

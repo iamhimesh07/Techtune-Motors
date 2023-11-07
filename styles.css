@@ -1,11 +1,25 @@
 /* styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap');
+
+/* font face */
+@font-face {
+    font-family: "'Big Shoulders Stencil Display'";
+    src: url('assets/font/BigShouldersStencilDisplay-VariableFont_wght.ttf') format('truetype');
+    src: url('assets/font/BigShouldersStencilDisplay-VariableFont_wght.ttf') format('truetype');
+
+  }
+
 /* CSS Variables */
 :root {
     --primary-btn-bg-color: rgba(255, 248, 80, 1);
     --primary-btn-text-color: #000;
     --secondary-btn-bg-color: #000;
     --white: #ffffff;
+  }
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
   }
 
 /* Custom Cursor */
@@ -75,11 +89,12 @@ button.s-btn {
 }
 
 .main-hero-headline {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bold;
     margin-bottom: 3.5rem;
     /* margin-top: 3rem; */
     color: rgba(231, 225, 53, 0.844);
+    font-family: 'Big Shoulders Stencil Display', sans-serif;;
 }
 
 .hero {
@@ -131,6 +146,27 @@ button.s-btn {
     height: 2.5px;
     width: 10%;
     color: rgba(255, 255, 255, 1);
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 1;
+    margin-top: 0.5rem;
+}
+
+.testimonial-title {
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+    color: var(--primary-btn-bg-color);
+    font-weight: bold;
+}
+
+.testimonial-title::after {
+    content: '';
+    display: block;
+    height: 2.5px;
+    width: 50%;
+    color: rgb(0, 0, 0);
     background-color: #ffffff;
     position: absolute;
     bottom: -0.5rem;

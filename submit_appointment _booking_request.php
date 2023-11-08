@@ -1,3 +1,4 @@
+<?php  ("includes/header.php")?>
 <?php
 
     // taking input value from the form by using their for and name attribute, and storing it in the respective variable.
@@ -32,3 +33,4 @@
 		$conn->close();
 	}
 ?>
+

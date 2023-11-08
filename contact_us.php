@@ -14,6 +14,7 @@
     </div>
   </div>
 
+
   <section>
     <div class="container-fluid bg-color">
       <div class="row">
@@ -21,7 +22,7 @@
           <div class="column mb-5">
             <div class="contact-form">
               <h2>Contact Us</h2>
-              <form action="submit_contact_form.php" method="post">
+              <form action="" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required /><br />
 
@@ -32,6 +33,36 @@
                 <textarea id="message" name="message" rows="4" required></textarea><br />
 
                 <button type="submit" class="primary-button">Submit</button>
+                
+  <?php
+
+if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+    // taking input value from the form by using their for and name attribute, and storing it in the respective variable.
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+
+// Database connection
+$conn = new mysqli('localhost','root','','techtune-motors');
+if($conn->connect_error){
+  echo "$conn->connect_error";
+  die("Connection Failed : ". $conn->connect_error);
+} else {
+  $stmt = $conn->prepare("insert into contact_us_form(name, email, message) values(?, ?, ?)");
+  $stmt->bind_param("sss", $name, $email, $message);
+  $execval = $stmt->execute();
+  // echo $execval;
+  echo "Thnak You! We will get back you shortly.";
+  $stmt->close();
+  $conn->close();
+}
+  
+}
+
+
+
+?>
               </form>
             </div>
           </div>

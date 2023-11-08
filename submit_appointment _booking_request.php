@@ -24,7 +24,7 @@
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
 		$stmt = $conn->prepare("insert into appointment_booking_request(make_model, year, vin, license_plate, previous_mileage, customer_name, contact_info, customer_address, service_request, service_history, authorization, estimated_cost, completion_date, payment_options) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-		$stmt->bind_param("sssssssiisiidd", $make_model, $year, $vin, $license_plate,  $previous_mileage, $customer_name, $contact_info, $customer_address, $service_request, $service_history, $authorization, $estimated_cost, $completion_date, $payment_options);
+		$stmt->bind_param("sssssssiisiiis", $make_model, $year, $vin, $license_plate,  $previous_mileage, $customer_name, $contact_info, $customer_address, $service_request, $service_history, $authorization, $estimated_cost, $completion_date, $payment_options);
 		$execval = $stmt->execute();
 		echo $execval;
 		echo "Form Submited successfully. we will get in touch with you shortly. Stay Safe by Get your car repaired timely.";

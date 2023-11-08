@@ -13,7 +13,7 @@
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
 		$stmt = $conn->prepare("insert into request_callback(name, phone, message) values(?, ?, ?)");
-		$stmt->bind_param("ssi", $name, $phone, $message);
+		$stmt->bind_param("sis", $name, $phone, $message);
 		$execval = $stmt->execute();
 		echo $execval;
 		echo "Form Submited successfully. we will get in touch with you shortly. Stay Safe by Get your car repaired timely.";
